@@ -1,3 +1,8 @@
 from blog import app
 
-app.run(debug=True)
+
+app.secret_key = 'secretkey'
+
+if __name__ == '__main__':
+
+    app.run(debug=True)
